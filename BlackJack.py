@@ -20,6 +20,7 @@ class Deck():
         for suit in self.suit:
             for rank in self.rank:
                 self.cards.append(Card(suit,rank))
+                #Comment goes here!
     
     def shuffle_deck(self):
         random.shuffle(self.cards)
