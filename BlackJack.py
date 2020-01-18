@@ -23,6 +23,8 @@ class Deck():
                 #Comment goes here!
                 #Comment goes here!
 
+                #Woah! Nice comments baby, you're incredible as always!
+
     
     def shuffle_deck(self):
         random.shuffle(self.cards)
