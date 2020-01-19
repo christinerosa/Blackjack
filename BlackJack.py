@@ -353,7 +353,6 @@ while playing:
                 # This check ensures that they can't press enter without anything written.
                 continue
 
-
             if keep_playing[0].lower() == 'y':
                 playing = True
             elif keep_playing[0].lower() == 'n':
