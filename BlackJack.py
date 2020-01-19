@@ -1,4 +1,12 @@
+import os
 import random
+from tkinter import *
+
+# Creates window for GUI
+window = Tk()
+window.title("Blackjack")
+window.geometry("500x300")
+window.resizable(0, 0)
 
 class Card():
     
@@ -315,7 +323,17 @@ def dealer_wins(player,dealer):
 def push(player,dealer):
     print("\nIt's a tie! Push.")
 
-print("Welcome to Black Jack!")
+# Createsfirst frame with welcome and start button
+first_frame = Frame(window, width = 20, height = 20, bd = 0)
+first_frame.place(relx = 0.5, rely = 0.5, anchor = CENTER)
+welcome = Label(first_frame, text = "Welcome to Blackjack!", ).pack()
+start = Button(first_frame, text = "START").pack()
+
+# Keeps window open until closed by user
+window.mainloop()
+
+# Commenting this code out while GUI is added
+"""print("Welcome to Blackjack!")
 
 player = Player()
 dealer = Dealer()  
@@ -366,7 +384,7 @@ while playing:
     else:
         print("\nYou're all out of chips!")
         print("Thanks for playing!")
-        playing = False
+        playing = False"""
         
     
 
