@@ -323,7 +323,7 @@ def dealer_wins(player,dealer):
 def push(player,dealer):
     print("\nIt's a tie! Push.")
 
-# Createsfirst frame with welcome and start button
+# Creates first frame with welcome and start button
 first_frame = Frame(window, width = 20, height = 20, bd = 0)
 first_frame.place(relx = 0.5, rely = 0.5, anchor = CENTER)
 welcome = Label(first_frame, text = "Welcome to Blackjack!", ).pack()
